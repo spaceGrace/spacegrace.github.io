@@ -1,15 +1,272 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yury Oxuke | Senior Frontend Developer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuriy Oksyuk — Frontend Architect</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <main>
-        <h1>Yury</h1>
-        <h2>Oxuke</h2>
-        <h5>Senior Frontend Developer</h5>
-    </main>
+
+    <canvas id="particles"></canvas>
+    <div class="noise"></div>
+
+    <div class="container parallax" id="parallax">
+
+        <section>
+            <h1>Юрий Оксюк</h1>
+            <div class="subtitle">Typescript Developer • React • Node</div>
+            <p>
+                JS/TS Developer с 10+ годами опыта создания высоконагруженных и отзывчивых веб-приложений.
+                Эксперт в экосистеме React. Глубоко разбираюсь в инструментах сборки (Webpack, Vite, gulp) и архитектуре
+                фронтенд-приложений.
+            </p>
+            <p>
+                Отличаюсь стратегическим мышлением: способен видеть долгосрочные последствия технических решений и
+                выстраивать масштабируемую и поддерживаемую кодовую базу. Внимателен к деталям, тактичен в коммуникации
+                и безупречно пунктуален, что гарантирует надежность и предсказуемость в работе и соблюдение дедлайнов.
+            </p>
+            <br><br>
+            <a href="mailto:oxuke.dev@gmail.com" class="btn">Mail</a>
+            <a href="https://t.me/xfury" class="btn">Telegram</a>
+        </section>
+
+        <section>
+            <h2>3D Tech Sphere</h2>
+            <div id="sphere-container"></div>
+        </section>
+
+
+        <section>
+            <h2>Technology Matrix</h2>
+
+            <div class="tech-matrix">
+
+                <div class="tech-group reveal">
+                    <div class="tech-title">Architecture</div>
+                    <div class="tech-tags">
+                        <span>Microfrontends</span>
+                        <span>Module Federation</span>
+                        <span>SSR</span>
+                        <span>BFF</span>
+                        <span>Monorepo</span>
+                        <span>Design Systems</span>
+                    </div>
+                </div>
+
+                <div class="tech-group reveal">
+                    <div class="tech-title">Frontend Core</div>
+                    <div class="tech-tags">
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>Next.js</span>
+                        <span>JavaScript</span>
+                        <span>HTML5</span>
+                        <span>CSS / Sass / Less</span>
+                    </div>
+                </div>
+
+                <div class="tech-group reveal">
+                    <div class="tech-title">State & Data</div>
+                    <div class="tech-tags">
+                        <span>React Query</span>
+                        <span>Zustand</span>
+                        <span>Redux</span>
+                        <span>RTK</span>
+                        <span>Axios</span>
+                        <span>WebSockets</span>
+                    </div>
+                </div>
+
+                <div class="tech-group reveal">
+                    <div class="tech-title">Infrastructure</div>
+                    <div class="tech-tags">
+                        <span>Webpack</span>
+                        <span>Vite</span>
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>CI/CD</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+
+                <div class="tech-group reveal">
+                    <div class="tech-title">Quality & Testing</div>
+                    <div class="tech-tags">
+                        <span>Jest</span>
+                        <span>React Testing Library</span>
+                        <span>ESLint</span>
+                        <span>Prettier</span>
+                        <span>Code Review</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section>
+            <h2>Опыт работы</h2>
+
+            <div class="experience">
+
+                <!-- Proxy Band -->
+                <div class="exp-card reveal">
+                    <div class="exp-header" onclick="toggleExp(this)">
+                        <div>
+                            <div class="exp-company">Proxy Band — Fullstack Developer</div>
+                            <div class="exp-date">2025 — настоящее время</div>
+                        </div>
+                        <div class="exp-toggle">+</div>
+                    </div>
+                    <div class="exp-content">
+                        <p><strong>Стек технологий:</strong> Node.js, Express, Redis, Prometheus. React,
+                            React-Query, Zustand,
+                            i18next, React-Hook-Form + Yup, Jest, React Testing Library, Husky.</p>
+                        <ul>
+                            <li></li>
+                            <li>Инфраструктура и процессы: Jira, Confluence, Storybook, SonarQube, GitHub. Внедрение и
+                                поддержка процессов Code Review, декомпозиции задач.</li>
+                            <li>Провел аудит и рефакторинг кодовой базы, что привело к сокращению объема кода на 40% и
+                                значительному повышению его читаемости и поддерживаемости. Полностью мигрировал проекты
+                                с JavaScript на TypeScript.</li>
+                            <li>Разработал универсальный SSR-модуль с кастомной логикой, оптимизировал ререндеры
+                                компонентов и внедрил стратегии кеширования запросов, что увеличило скорость загрузки и
+                                отзывчивость интерфейсов.</li>
+                            <li>
+                                С нуля создал UI-библиотеку на React (документированную в Storybook) и обеспечил ее
+                                интеграцию во все проекты. Вынес общую бизнес-логику и утилиты в монорепозиторий
+                                приватных npm-пакетов
+                            </li>
+                            <li>
+                                Инициировал и внедрил единые стандарты кода для всех команд: создал конфигурации ESLint
+                                и Prettier, настроил pre-commit хуки, что привело к значительному снижению количества
+                                ошибок и унификации стиля.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Gaskar -->
+                <div class="exp-card reveal">
+                    <div class="exp-header" onclick="toggleExp(this)">
+                        <div>
+                            <div class="exp-company">Gaskar Group — Frontend Developer</div>
+                            <div class="exp-date">2023 — 2025</div>
+                        </div>
+                        <div class="exp-toggle">+</div>
+                    </div>
+                    <div class="exp-content">
+                        <p><strong>Стек технологий:</strong> React, React Query, React Hook Form, Yup, Styled
+                            Components, dxhtml-gantt.</p>
+                        <ul>
+                            <li>Разработка и вывод в production микрофронтенд-модуля для календарного планирования
+                                строительных работ (интерактивная диаграмма Ганта).</li>
+                            <li>Реализация бизнес-логики работы с датами, временными интервалами и часовыми поясами.
+                                Разработка комплексных пользовательских форм с валидацией.</li>
+                            <li>Написание модульных и интеграционных тестов с использованием Jest и React Testing
+                                Library. Работа в инфраструктуре GitLab CI/CD и YouTrack</li>
+                            <li>Успешный вывод модуля в продакшен с последующей оптимизацией производительности
+                                рендеринга и взаимодействия пользователя.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Gazprombank -->
+                <div class="exp-card reveal">
+                    <div class="exp-header" onclick="toggleExp(this)">
+                        <div>
+                            <div class="exp-company">Газпромбанк — Frontend Developer</div>
+                            <div class="exp-date">2021 — 2023</div>
+                        </div>
+                        <div class="exp-toggle">+</div>
+                    </div>
+                    <div class="exp-content">
+                        <p><strong>Стек технологий:</strong>Webpack, React, Redux, Immutable.js, Less, Material-UI,
+                            React-Flow, React-Charts, React-Hook-Form, Jest, React Testing Library, ESLint.</p>
+                        <ul>
+                            <li>SPA-конструктор кредитных чек-листов (React Flow)</li>
+                            <li>Менеджер справочников банка</li>
+                            <li>Модернизация legacy-кода (классы → hooks)</li>
+                            <li>Снижение объёма кода ~30%</li>
+                            <li>Автоматизация процессов (ускорение x2–3)</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- AMT -->
+                <div class="exp-card reveal">
+                    <div class="exp-header" onclick="toggleExp(this)">
+                        <div>
+                            <div class="exp-company">Агентство медицинских технологий — Frontend Developer</div>
+                            <div class="exp-date">2018 — 2023</div>
+                        </div>
+                        <div class="exp-toggle">+</div>
+                    </div>
+                    <div class="exp-content">
+                        <p><strong>Стек технологий:</strong>React, Redux Toolkit (RTK), Axios
+                            + Socket.io (REST/WS), Ant Design, React Charts.</p>
+                        <ul>
+                            <li>Разработка пользовательских интерфейсов для комплекса веб-приложений в
+                                научно-медицинской сфере.</li>
+                            <li>Ключевые проекты: личный кабинет врача, платформа для телемедицины (с интеграцией Big
+                                Blue Button), интерактивная новостная лента научных публикаций.</li>
+                            <li>С нуля разработал динамическую новостную ленту с real-time обновлениями (WebSocket) и
+                                агрегацией контента из множества внешних источников.</li>
+                            <li>Участвовал в создании модуля телемедицины, обеспечив его интеграцию с видеосервисом и
+                                удобный интерфейс для врачей и пациентов.</li>
+                            <li>Внедрил и настроил статический анализ кода (ESLint), что повысило качество кода и
+                                единообразие кодовой базы в команде.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- KD -->
+                <div class="exp-card reveal">
+                    <div class="exp-header" onclick="toggleExp(this)">
+                        <div>
+                            <div class="exp-company">Круизный Дом — JS Developer</div>
+                            <div class="exp-date">2016 — 2018</div>
+                        </div>
+                        <div class="exp-toggle">+</div>
+                    </div>
+                    <div class="exp-content">
+                        <p><strong>Проекты:</strong></p>
+                        <p><strong>Стек технологий:</strong>js, jQuery, gulp, twig, bitrix</p>
+                        <ul>
+                            <li>Верстка и программирование интерактивных UI-компонентов (слайдеры, галереи, аккордеоны,
+                                табы, модальные окна, кастомные селекты) с использованием jQuery и нативного JS.
+                                Использование Twig в связке с Gulp для сборки HTML-шаблонов.</li>
+                            <li>Создание сложных, каскадных фильтров с использованием jQuery для динамического
+                                обновления интерфейса и AJAX-запросов для подгрузки данных без перезагрузки страницы.
+                            </li>
+                            <li>С нуля разработал динамическую новостную ленту с real-time обновлениями (WebSocket) и
+                                агрегацией контента из множества внешних источников.</li>
+                            <li>Реализация "умного" поиска с автодополнением (autocomplete), подсказками и историей
+                                запросов.</li>
+                            <li>Реализация динамических полей (добавление/удаление пассажиров, выбор дополнительных
+                                опций). Интеграция с платежными системами и API.</li>
+                            <li>
+                                Настройка и поддержка сборки проекта с помощью Gulp (минификация и конкатенация JS/CSS,
+                                компиляция препроцессоров, автоматическое обновление браузера — LiveReload)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        © 2026 Yuriy Oksyuk — Frontend Architect
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+
 </body>
+
 </html>
